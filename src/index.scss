@@ -1,0 +1,9 @@
+@import './assets/scss/_null';
+@import './assets/scss/_ui';
+
+#root {
+    display: flex;
+    min-height: 100vh;
+    max-height: fit-content;
+    overflow: hidden;
+}

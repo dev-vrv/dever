@@ -1,0 +1,50 @@
+@import '../../assets/scss/_colors';
+
+.footer {
+    height: fit-content;
+    position: relative;
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        padding: 0 !important;
+        margin: 0 !important;
+        &:hover {
+            & .footer__nav-link {
+                color: $color-lite;
+            }
+        }
+        &-link {
+            transition: color 0.3s ease-in-out;
+            display: block;
+            padding: 0.25rem;
+            color: $color-white;
+            &:hover {
+                color: $color-white !important;
+            }
+        }
+    }
+    &__nav--social {
+        display: flex;
+        flex-direction: row;
+        font-size: 1.5rem;
+        & .footer__nav-link {
+            padding: 0.5rem;
+        }
+    }
+
+
+    &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 40rem;
+        height: 40rem;
+        border-radius: 50%;
+        right: 5%;
+        top: 30%;
+        background-color: rgba($color-white, 0.05);
+        pointer-events: none;
+    }
+
+
+}
